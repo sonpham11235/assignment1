@@ -1,0 +1,11 @@
+.UserOutput {
+    width: 60%;
+    margin: 10px auto;
+    padding: 3px 10px;
+    border: 1px solid #eee;
+    box-shadow: 2px #ccc;
+}
+
+.UserNameDisplay {
+    font-weight: bold;
+}
