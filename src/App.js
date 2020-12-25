@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 
   nameChangeHandler = (event, index) => {
-    let newNames = this.state.names;
+    let newNames = [...this.state.names];
     newNames[index] = event.target.value;
 
     this.setState({
@@ -25,7 +25,8 @@ class App extends React.Component {
       <div className="App">
         {users.map((name, index) => {
           return (
-            <UserOutput 
+            <UserOutput
+              key={index}
               userName={name}
               index={index}
               changed={this.nameChangeHandler} />
